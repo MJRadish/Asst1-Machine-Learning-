@@ -64,8 +64,6 @@ int IsEchelon(double** Matrix);
 
 int hasZeroes(int type, double** M,int row);
 
-//Multiple is like divide, Add is like Subtract!!!
-
 int main (int argc, char* argv[]){
 Magnitude=0;
 
