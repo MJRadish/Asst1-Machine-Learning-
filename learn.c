@@ -1,3 +1,6 @@
+//Machine Learning Algorithm which predicts the prices of a house given its components. Takes two arguments, argument 1 is the training data.
+//Argument 2 is the testing data. Program outputs the predicted prices of each house given the components after calculating the weights of each component.
+
 #include <stdio.h>
 #include <unistd.h>
 #include <stdlib.h>
