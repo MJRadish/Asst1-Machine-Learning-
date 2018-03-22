@@ -1,5 +1,4 @@
-learn: learn.c
-	gcc -Wall -Werror -g learn.c -o learn
+MLearn: MLearn.c
+	gcc -g -Wall MLearn.c -o Learn
 clean:
-	rm learn
-
+	rm MLearn
