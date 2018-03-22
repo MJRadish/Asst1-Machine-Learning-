@@ -11,16 +11,12 @@
 #include <stdbool.h>
 #include <string.h>
 
-//Any int is greater than 0
-
-//void printData();
 char* AllData;
 
 int row;
 int column;
 int NXN;
 int power=0;
-//int MATRIX[0][0];
 
 typedef struct Storage_{
 int Row;
@@ -401,28 +397,6 @@ for (i=0; i<M1->Row; i++){
 	//NEXT ROW
 }
 
-//printf("\nNEW MATRIX\n\n");
-//printMatrixData(NXN,NewM);
-
-//freeMatrix(Matrix1);
-//freeMatrix(Matrix2);
-/*
-for(i=0;i<NXN;i++){
-for(k=0;k<NXN;k++){
-//Copy NewM to M1
-Matrix1[k][i]=NewM[k][i];
-
-}
-}
-
-freeMatrix(NewM);
-
-*/
-
-
-
-//freeMatrix(Matrix1);
-
 AppendMatrix(NewM,M1->Row,M2->Column,&M2);
 //Simpler to just return the new matrix
 return NewM;
@@ -468,7 +442,6 @@ return M1;
 }
 
 long double** AddRows(long double entry, long double** M1, long int column1, long int column2){
-//long int* TotalRow=M1[row][column];
 ////Total row space
 if(column1<0||column1>=NXN||column2<0||column2>=NXN){
 printf("\n INVALID COLUMN #\n");
@@ -486,7 +459,6 @@ return M1;
 }
 
 long double** MultiplyRow(long double entry, long double** M1,long int column){
-//long int* TotalRow=M1[row][column];
 ////Total row space
 if(column<0||column>=NXN){
 printf("\n INVALID COLUMN #\n");
@@ -699,24 +671,10 @@ Y[0][(*Su)->Row]=(*Su)->Data;
 Su=&((*Su)->Next);
 }
 }
-
-/*
-Matrix* M2=M1;
-Matrix* M3;
-while(M2!=NULL){
-M3=M2->Next;
-}
-*M1=malloc(sizeof(Matrix));
-(*M1)->Row=rows;
-(*M1)->Column=columns;
-(*M1)->Next=NULL;
-(*M1)->M=M;
-*/
-
+	
 if(Y!=NULL){
 AppendMatrix(Y,rows,1,M1);
 }
-
 if(*M1==NULL){
  *M1=malloc(sizeof(Matrix));
 (*M1)->Row=rows;
