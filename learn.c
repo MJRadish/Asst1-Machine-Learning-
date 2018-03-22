@@ -1,8 +1,6 @@
 //Machine Learning Algorithm which predicts the prices of a house given its components. Takes two arguments, argument 1 is the training data.
 //Argument 2 is the testing data. Program outputs the predicted prices of each house given the components after calculating the weights of each component.
-//On assignment 0, there is an inverse calculator which is more efficient than this current one. Upgrades will be made to this version soon.
-
-
+//On assignment 0, there is an inverse calculator which is more efficient than this current one. Upgrade has been made to this version in MLearn.c, MLearn is the executable file.
 #include <stdio.h>
 #include <unistd.h>
 #include <stdlib.h>
