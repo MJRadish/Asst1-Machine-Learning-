@@ -1,3 +1,6 @@
+//Predicts the price of a house given training data in the form of a matrix (file(n).txt) as argument 1 followed by test data in the form of a matrix
+//(file(n).txt) as argument 2. This is the upgraded version of learn.c, saving 600 extra lines of code.
+
 #include <stdlib.h>
 #include <unistd.h>
 #include <stdio.h>
